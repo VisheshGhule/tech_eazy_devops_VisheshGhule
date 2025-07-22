@@ -1,4 +1,0 @@
-# dev_config
-REPO_URL="https://github.com/techeazy-consulting/techeazy-devops.git"
-REPO_NAME="techeazy-devops"
-INSTANCE_TYPE="t2.micro"
