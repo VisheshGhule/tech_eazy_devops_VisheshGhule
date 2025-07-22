@@ -85,6 +85,6 @@ http://<your-ec2-public-ip>
 #  9. (Optional) Auto-Stop EC2
 If you want to stop EC2 after some time, run:
 ```bash
-sudo shutdown -h +30  # stops instance in 60 minutes
+sudo shutdown -h +30  # stops instance in 30 minutes
 ```
 <img width="825" height="94" alt="Screenshot from 2025-07-22 17-20-40" src="https://github.com/user-attachments/assets/24c6648f-69ff-4c0a-b654-915932461d4e" />
