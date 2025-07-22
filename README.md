@@ -17,7 +17,7 @@ Deploy the Spring Boot app on AWS EC2 using Java 21, Maven, and Ubuntu 22.04 wit
 - I have already have account on AWS so i'm not going create account
 - Launched a t2.micro EC2 instance using Ubuntu 22.04 in AWS
 - While creating ec2 instance, in security group select inbound port 80 and 22
-  <img width="863" height="257" alt="Screenshot from 2025-07-22 16-21-41" src="https://github.com/user-attachments/assets/d9691838-aefa-4ebe-9398-4144bac85d29" />
+  <img width="863" height="257" alt="Screenshot from 2025-07-22 16-21-41" src="https://github.com/user-attachments/assets/33d42b88-5074-4727-ba3c-c913eadd6f11" />
 - Connected via SSH
 
 ---
@@ -37,7 +37,7 @@ java -version
 sudo apt install maven -y
 mvn -version
 ```
-<img width="863" height="257" alt="Screenshot from 2025-07-22 16-30-54" src="https://github.com/user-attachments/assets/8e7512f7-0502-4010-804a-76a4e0c0482f" />
+<img width="863" height="257" alt="Screenshot from 2025-07-22 16-30-54" src="https://github.com/user-attachments/assets/fc1a736e-e081-4294-b717-445f5fc1a723" />
 
 ---
 
@@ -46,8 +46,7 @@ mvn -version
 git clone https://github.com/techeazy-consulting/techeazy-devops
 cd techeazy-devops
 ```
-<img width="880" height="226" alt="Screenshot from 2025-07-22 16-32-12" src="https://github.com/user-attachments/assets/60590756-f2ff-4032-8919-999c353dc7bd" />
-
+<img width="880" height="226" alt="Screenshot from 2025-07-22 16-32-12" src="https://github.com/user-attachments/assets/a30d5696-2c6e-4362-9b47-2b5885021faf" />
 
 ---
 
@@ -55,8 +54,7 @@ cd techeazy-devops
 ```bash
 mvn clean package
 ```
-<img width="805" height="179" alt="Screenshot from 2025-07-22 16-35-54" src="https://github.com/user-attachments/assets/ed46b2af-a543-46ff-b19d-53dae0011962" />
-
+<img width="805" height="179" alt="Screenshot from 2025-07-22 16-35-54" src="https://github.com/user-attachments/assets/5aa1c0aa-b960-4bbb-8a6e-418a24d860a5" />
 
 ---
 
@@ -69,7 +67,7 @@ OR (you can also use below given command)
 ```bash
 sudo nohup java -jar target/*.jar > log.txt &
 ```
-<img width="978" height="75" alt="Screenshot from 2025-07-22 16-37-35" src="https://github.com/user-attachments/assets/b26f1834-712c-4b1d-b5e5-6ef68c94d3c5" />
+<img width="978" height="75" alt="Screenshot from 2025-07-22 16-37-35" src="https://github.com/user-attachments/assets/6fa39662-a0ae-404f-a466-afb8d7295303" />
 
 ---
 
@@ -78,7 +76,7 @@ Open browser and go to:
 ```bash
 http://<your-ec2-public-ip>
 ```
-<img width="1363" height="115" alt="Screenshot from 2025-07-22 16-37-46" src="https://github.com/user-attachments/assets/96a1dcb5-3432-4516-80c9-15a355b402b3" />
+<img width="1363" height="115" alt="Screenshot from 2025-07-22 16-37-46" src="https://github.com/user-attachments/assets/d104ed29-8cff-4d94-8e23-d8e5a499b641" />
 
 ---
 
@@ -87,4 +85,4 @@ If you want to stop EC2 after some time, run:
 ```bash
 sudo shutdown -h +30  # stops instance in 30 minutes
 ```
-<img width="825" height="94" alt="Screenshot from 2025-07-22 17-20-40" src="https://github.com/user-attachments/assets/24c6648f-69ff-4c0a-b654-915932461d4e" />
+<img width="825" height="94" alt="Screenshot from 2025-07-22 17-20-40" src="https://github.com/user-attachments/assets/00fc8fb2-ffa1-4dc3-9395-e0a8161d1474" />
