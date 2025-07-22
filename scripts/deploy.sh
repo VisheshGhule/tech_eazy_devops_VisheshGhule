@@ -59,5 +59,5 @@ fi
 aws s3 cp /home/ubuntu/app.log s3://${BUCKET_NAME}/app.log
 aws s3 cp /var/log/cloud-init.log s3://${BUCKET_NAME}/cloud-init.log || true
 
-# Shutdown in 15 minutes
-echo "sudo shutdown -h now" | at now + 15 minutes
+# Shutdown in 30 minutes
+echo "sudo shutdown -h now" | at now + 30 minutes
