@@ -1,5 +1,39 @@
 # Assignment 2
 
+1. Im going to use CloudFormation and CLI. (craeting iam role for ec2)
+Created IAM Roles:
+Role A: Read-only access to the specific S3 bucket.
+Role B: Upload-only access (cannot download or list objects).
+<img width="1220" height="368" alt="Screenshot from 2025-07-24 14-23-53" src="https://github.com/user-attachments/assets/c8791a32-0938-459f-8be3-abde7a64f649" />
+
+ 2. Created a CloudFormation Template:
+<img width="1366" height="284" alt="Screenshot from 2025-07-24 14-26-47" src="https://github.com/user-attachments/assets/d462c2ac-6183-4885-9461-43cf07fa1d5d" />
+EC2 instance creation (while creating ec2 instance under advance setting select iam role which have created)
+<img width="885" height="229" alt="Screenshot from 2025-07-24 14-33-42" src="https://github.com/user-attachments/assets/cf53c48c-d874-4edc-a614-38f438f125cc" />
+<img width="1092" height="207" alt="Screenshot from 2025-07-24 14-35-27" src="https://github.com/user-attachments/assets/6d679cf0-44e7-44a0-894e-568f46eea4b0" />
+Role attachment (Role B)
+<img width="1218" height="644" alt="Screenshot from 2025-07-24 14-43-25" src="https://github.com/user-attachments/assets/c150ef2a-bce9-4460-ad57-e88fa0a3b62e" />
+<img width="873" height="94" alt="Screenshot from 2025-07-24 14-50-39" src="https://github.com/user-attachments/assets/43bca652-33b5-411c-b73a-cf16a225ea01" />
+
+ 3. S3 bucket creation (private access only)
+<img width="1051" height="231" alt="Screenshot from 2025-07-24 14-57-56" src="https://github.com/user-attachments/assets/49b180c8-2a95-43ea-8035-775d930151d1" />
+<img width="1061" height="215" alt="Screenshot from 2025-07-24 15-00-03" src="https://github.com/user-attachments/assets/68a52980-e170-4dff-bee5-07a53829ee60" />
+<img width="892" height="403" alt="Screenshot from 2025-07-24 15-03-26" src="https://github.com/user-attachments/assets/1018e5f1-2a1d-4119-9bb6-2c9edf7a78c1" />
+<img width="735" height="379" alt="Screenshot from 2025-07-24 15-05-31" src="https://github.com/user-attachments/assets/4f849ac0-cfa4-4e3a-987f-55ce027b3109" />
+Uploaded EC2 Logs to S3 on Shutdown:
+- Wrote a shutdown script to:
+- Archive EC2 system logs (e.g., /var/log/cloud-init.log)
+- Upload them to a specific S3 folder
+
+<img width="1188" height="159" alt="Screenshot from 2025-07-24 15-06-17" src="https://github.com/user-attachments/assets/fe1625fd-4ba2-4820-be04-d3b78fe75e86" />
+<img width="760" height="374" alt="Screenshot from 2025-07-24 15-17-05" src="https://github.com/user-attachments/assets/b5243b60-f74f-4aae-96aa-bec37499cc90" />
+<img width="820" height="169" alt="Screenshot from 2025-07-24 15-18-15" src="https://github.com/user-attachments/assets/f95f5a5a-1910-4657-b4bb-4d3b636e897c" />
+<img width="976" height="120" alt="Screenshot from 2025-07-24 15-21-33" src="https://github.com/user-attachments/assets/e68c2bbf-6d79-4732-95a9-5030f31fe151" />
+<img width="1056" height="408" alt="Screenshot from 2025-07-24 15-23-14" src="https://github.com/user-attachments/assets/42e0cb45-d3f4-43af-b014-a6cd5525e90e" />
+We can download logs of ec2
+<img width="1066" height="136" alt="Screenshot from 2025-07-24 15-32-15" src="https://github.com/user-attachments/assets/ff7688dd-c5fa-4a50-ae44-b56064ddcd94" />
+
+<img width="1058" height="404" alt="Screenshot from 2025-07-24 15-37-01" src="https://github.com/user-attachments/assets/8636488c-df90-42b3-8385-f789494a14cd" />
 
 
 ---
