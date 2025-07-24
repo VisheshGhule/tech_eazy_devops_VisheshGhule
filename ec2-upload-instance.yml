@@ -1,0 +1,18 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: EC2 Instance with Upload Role
+
+Resources:
+  UploadEC2:
+    Type: AWS::EC2::Instance
+    Properties:
+      InstanceType: t2.micro
+      ImageId: ami-05f991c49d264708f
+      KeyName: vishesh1.pem
+      IamInstanceProfile: EC2UploadProfile
+      SecurityGroupIds:
+        - sg-0dc441e145af2295a
+      SubnetId: subnet-0059aa39a7de8b569
+      Tags:
+        - Key: Name
+          Value: UploadEC2
+
